@@ -1,0 +1,637 @@
+                    body {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    * {
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+                    /* header part*/
+                    
+                    header {
+                        position: fixed;
+                        top: 0px;
+                        left: 0;
+                        padding: 0 100px;
+                        background-color: #06a2d1;
+                        width: 100%;
+                        box-sizing: border-box;
+                        height: 50px;
+                    }
+                    
+                    header .logo {
+                        letter-spacing: 3px;
+                        color: rgb(249, 250, 249);
+                        height: 25px;
+                        line-height: 50px;
+                        font-size: 20px;
+                        float: left;
+                        font-weight: bold;
+                    }
+                    
+                    header nav {
+                        float: right;
+                    }
+                    
+                    header nav ul {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                    }
+                    
+                    header nav ul li {
+                        list-style: none;
+                    }
+                    
+                    header nav ul li a {
+                        height: 50px;
+                        line-height: 45px;
+                        padding: 0 20px;
+                        color: #fff;
+                        text-decoration: none;
+                        display: block;
+                    }
+                    
+                    header nav ul li a:hover,
+                    header nav ul li a.active {
+                        color: #fff;
+                        background: #024458;
+                        /* background: #ffcc00; */
+                    }
+                    
+                    .menu-toggle {
+                        color: #fff;
+                        float: right;
+                        line-height: 50px;
+                        font-size: 24px;
+                        cursor: pointer;
+                        display: none;
+                    }
+                    
+                    @media (max-width: 991px) {
+                        header {
+                            padding: 20px;
+                            height: 175px;
+                        }
+                        header .logo {
+                            font-size: 65px;
+                            margin-top: 25px;
+                        }
+                        .menu-toggle {
+                            display: block;
+                            margin-top: 25px;
+                            line-height: 50px;
+                            font-size: 60px;
+                        }
+                        header nav {
+                            /*display: none;*/
+                            position: absolute;
+                            width: 100%;
+                            height: calc(100vh - 50px);
+                            background: #333;
+                            top: 100px;
+                            left: -100%;
+                            transition: 0.5s;
+                        }
+                        header nav.active {
+                            left: 0;
+                        }
+                        header nav ul {
+                            display: block;
+                            text-align: center;
+                            font-size: 40px;
+                        }
+                        header nav ul li a {
+                            border-bottom: 2px solid rgba(0, 0, 0, .2);
+                        }
+                    }
+                    /* headr part */
+                    /* main-part */
+                    
+                    .container {
+                        margin-top: 50px;
+                        width: 100%;
+                        height: 600px;
+                        /* background-color: #81355a; */
+                        background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../Images/brick.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                    }
+                    
+                    .container .subcontainer1 {
+                        /* background-color: #06a2d1; */
+                        margin-left: 125px;
+                        margin-top: 50px;
+                        width: 450px;
+                        height: 500px;
+                    }
+                    
+                    .container .subcontainer1 img {
+                        width: 450px;
+                        height: 500px;
+                    }
+                    
+                    .container .subcontainer2 {
+                        margin-top: -530px;
+                        margin-left: 700px;
+                        width: 625px;
+                        height: 500px;
+                        /* background-color: #5a6591; */
+                    }
+                    
+                    .container .subcontainer2 h2 {
+                        color: #fff;
+                        padding-top: 45px;
+                        text-align: center;
+                        font-size: 40px;
+                    }
+                    
+                    .container .subcontainer2 p {
+                        color: #fff;
+                        padding-top: 45px;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                    
+                    .container .subcontainer2 p span {
+                        color: #06a2d1;
+                        font-weight: bold;
+                    }
+                    
+                    .container .subcontainer2 button {
+                        background-color: #06a2d1;
+                        margin-top: 50px;
+                        margin-left: 250px;
+                        height: 50px;
+                        width: 175px;
+                    }
+                    
+                    .container .subcontainer2 button a {
+                        font-size: 15px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+                    
+                    @media (max-width: 991px) {
+                        .container {
+                            height: 2828px;
+                            margin-top: 175px;
+                            width: 142%;
+                        }
+                        .container .subcontainer1 {
+                            height: 1464px;
+                            width: 83%;
+                        }
+                        .container .subcontainer1 img {
+                            height: 1464px;
+                            width: 100%;
+                        }
+                        .container .subcontainer2 {
+                            height: 1100px;
+                            text-align: center;
+                            margin-left: 110px;
+                            width: 85%;
+                            margin-top: 75px;
+                        }
+                        .container .subcontainer2 h2 {
+                            padding: 10px;
+                            font-size: 120px;
+                        }
+                        .container .subcontainer2 p {
+                            padding: 20px;
+                            font-size: 80px;
+                        }
+                        .container .subcontainer2 button {
+                            margin-left: 20px;
+                            height: 155px;
+                            width: 500px;
+                        }
+                        .container .subcontainer2 button a {
+                            font-size: 50px;
+                        }
+                    }
+                    /* main-part */
+                    /* education  */
+                    
+                    .education {
+                        width: 100%;
+                        height: 500px;
+                        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/brick.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        /* background-color: rgb(163, 159, 159); */
+                        display: inline-block;
+                    }
+                    
+                    .education h1 {
+                        letter-spacing: 2px;
+                        padding-top: 35px;
+                        text-align: center;
+                        color: #06a2d1;
+                    }
+                    
+                    .education .edu {
+                        margin: 20px;
+                        background-color: antiquewhite;
+                        margin-left: 100px;
+                        width: 300px;
+                        height: 300px;
+                        float: left;
+                    }
+                    
+                    .education .edu h2 {
+                        font-size: 28px;
+                        letter-spacing: 3px;
+                        padding: 20px;
+                        text-align: center;
+                        color: #06a2d1;
+                    }
+                    
+                    .education .edu p {
+                        font-size: 17px;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                    
+                    .education .edu button {
+                        margin-left: 100px;
+                        width: 100px;
+                        height: 40px;
+                        background-color: #06a2d1;
+                    }
+                    
+                    .education .edu button a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                    
+                    @media (max-width: 991px) {
+                        .education {
+                            height: 2828px;
+                            width: 142%;
+                        }
+                        .education h1 {
+                            font-size: 115px;
+                        }
+                        .education .edu {
+                            width: 87%;
+                            height: 715px;
+                        }
+                        .education .edu h2 {
+                            font-size: 90px;
+                        }
+                        .education .edu p {
+                            margin-top: -30px;
+                            font-size: 50px;
+                        }
+                        .education .edu button {
+                            margin-left: 450px;
+                            width: 350px;
+                            height: 125px;
+                        }
+                        .education .edu button a {
+                            font-size: 40px;
+                        }
+                    }
+                    /* education */
+                    /* Skill Section */
+                    
+                    .skill {
+                        margin-top: -21px;
+                        width: 100%;
+                        height: 600px;
+                        /* background-color: #e84393; */
+                        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/brick.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        /* background-color: rgb(163, 159, 159); */
+                    }
+                    
+                    .skill .myskill {
+                        padding-top: 40px;
+                        text-align: center;
+                        font-size: 30px;
+                        letter-spacing: 3px;
+                        color: #06a2d1;
+                        font-weight: bold;
+                    }
+                    
+                    .skills {
+                        /* background-color: rgb(80, 79, 79); */
+                        width: 100%;
+                        height: 400px;
+                        /* height: calc(100vh -50%); */
+                        padding-top: 40px;
+                    }
+                    
+                    .containerone {
+                        width: 65%;
+                        height: 5px;
+                        border-radius: 10px;
+                        border: 2px solid black;
+                        margin: 10px auto;
+                        margin-top: -18px;
+                    }
+                    
+                    .skills>h1 {
+                        margin-left: 15%;
+                        letter-spacing: 2px;
+                        /* color: rgb(248, 246, 246); */
+                        color: #fff;
+                    }
+                    
+                    .bar {
+                        /* box-shadow: 0px 0px 10px 4px blue; */
+                        box-shadow: 0px 0px 10px 4px #06a2d1;
+                        height: 4px;
+                        margin: 2px 0px;
+                        border-radius: 2px;
+                        background-color: aqua;
+                    }
+                    
+                    .html {
+                        animation: html 2s;
+                        width: 80%;
+                    }
+                    
+                    @keyframes html {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 80%;
+                        }
+                    }
+                    
+                    .css {
+                        animation: css 2s;
+                        width: 65%;
+                    }
+                    
+                    @keyframes css {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 65%;
+                        }
+                    }
+                    
+                    .java {
+                        animation: java 2s;
+                        width: 70%;
+                    }
+                    
+                    @keyframes java {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 70%;
+                        }
+                    }
+                    
+                    .j2 {
+                        animation: j2 2s;
+                        width: 60%;
+                    }
+                    
+                    @keyframes j2 {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 60%;
+                        }
+                    }
+                    
+                    .db {
+                        animation: db 2s;
+                        width: 70%;
+                    }
+                    
+                    @keyframes db {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 70%;
+                        }
+                    }
+                    
+                    .ccp {
+                        animation: ccp 2s;
+                        width: 75%;
+                    }
+                    
+                    @keyframes ccp {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 75%;
+                        }
+                    }
+                    
+                    @media (max-width: 991px) {
+                        .skill {
+                            margin-top: -82px;
+                            height: 2628px;
+                            width: 142%;
+                        }
+                        .skill .myskill {
+                            padding-top: 150px;
+                            font-size: 125px;
+                        }
+                        .skills {
+                            background-color: rgb(80, 79, 79);
+                            height: 1800px;
+                            width: 90%;
+                            margin-left: 70px;
+                        }
+                        .skills h1 {
+                            font-size: 80px;
+                        }
+                        .skills .bar {
+                            margin-top: 10px;
+                            box-shadow: 0px 0px 10px 4px #06a2d1;
+                            height: 10px;
+                            margin: 5px 0px;
+                            border-radius: 5px;
+                            /* background-color: aqua; */
+                        }
+                    }
+                    /* Skill Section */
+                    /* Activity */
+                    
+                    .activity {
+                        width: 100%;
+                        height: 500px;
+                        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/brick.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        /* background-color: rgb(163, 159, 159); */
+                        display: inline-block;
+                    }
+                    
+                    .activity h1 {
+                        letter-spacing: 2px;
+                        padding-top: 35px;
+                        text-align: center;
+                        color: #06a2d1;
+                    }
+                    
+                    .activity .act {
+                        margin: 30px;
+                        background-color: antiquewhite;
+                        /* margin: 10px; */
+                        width: 275px;
+                        height: 200px;
+                        float: left;
+                    }
+                    
+                    .activity .act h2 {
+                        font-size: 20px;
+                        letter-spacing: 3px;
+                        text-align: center;
+                        color: #06a2d1;
+                    }
+                    
+                    .activity .act p {
+                        font-size: 14px;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                    
+                    .activity .act button {
+                        margin-left: 100px;
+                        width: 100px;
+                        height: 30px;
+                        background-color: #06a2d1;
+                    }
+                    
+                    .activity .act button a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                    
+                    @media (max-width: 991px) {
+                        .activity {
+                            height: 3000px;
+                            width: 142%;
+                        }
+                        .activity h1 {
+                            font-size: 110px;
+                        }
+                        .activity .act {
+                            margin-left: 140px;
+                            width: 80%;
+                            height: 550px;
+                            padding-top: 40px;
+                        }
+                        .activity .act h2 {
+                            padding-top: -30px;
+                            font-size: 70px;
+                        }
+                        .activity .act p {
+                            margin-top: -50px;
+                            font-size: 50px;
+                        }
+                        .activity .act button {
+                            margin-left: 400px;
+                            width: 350px;
+                            height: 125px;
+                        }
+                        .activity .act button a {
+                            font-size: 50px;
+                        }
+                    }
+                    /* Activity */
+                    /* Footer Part */
+                    
+                    #main-footer {
+                        background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../Images/brick.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        /* background: rgb(211, 65, 65); */
+                        color: #fff;
+                        text-align: center;
+                        padding: 40px;
+                        /*margin-top: 40px;*/
+                    }
+                    
+                    #main-footer p {
+                        padding-top: 15px;
+                        font-size: 16px;
+                    }
+                    
+                    .centerdiv {
+                        /* background-color: #06a2d1; */
+                        height: 3vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .centerdiv a {
+                        height: 50px;
+                        width: 50px;
+                        background-color: #f5f6fa;
+                        border-radius: 50px;
+                        text-align: center;
+                        margin: 20px;
+                        line-height: 60px;
+                        /*box-shadow: 1px 4px 2px 2px ;*/
+                    }
+                    
+                    a i {
+                        transition: all 0.3s linear;
+                    }
+                    
+                    a:hover i {
+                        transform: scale(1.1);
+                    }
+                    
+                    .fa-github {
+                        color: black;
+                    }
+                    
+                    .fa-instagram {
+                        color: #e84393;
+                    }
+                    
+                    .fa-linkedin {
+                        color: #0097e6;
+                    }
+                    
+                    @media (max-width: 991px) {
+                        footer {
+                            height: 400px;
+                            width: 134%;
+                        }
+                        .centerdiv {
+                            height: 300px;
+                        }
+                        .centerdiv a {
+                            font-size: 40px;
+                            height: 100px;
+                            width: 100px;
+                            background-color: transparent;
+                            border-radius: 50px;
+                            text-align: center;
+                            margin: 40px;
+                            line-height: 60px;
+                        }
+                        #main-footer p {
+                            margin-top: -10px;
+                            font-size: 40px;
+                        }
+                        .fa-github {
+                            color: rgb(252, 249, 249);
+                        }
+                    }
+                    /* footer */
